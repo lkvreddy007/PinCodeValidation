@@ -6,7 +6,7 @@ public class PinCode {
 		Scanner s=new Scanner(System.in);
 		String pin;
 		System.out.println("Welcome to Pincode validator");
-		Pattern p=Pattern.compile("^[1-9]{1}[0-9]{5}$");
+		Pattern p=Pattern.compile("^[1-9]{1}[0-9]{2}(\\s)?[0-9]{3}$");
 		System.out.println("Enter a pincode:");
 		pin=s.nextLine();
 		Matcher match=p.matcher(pin);
